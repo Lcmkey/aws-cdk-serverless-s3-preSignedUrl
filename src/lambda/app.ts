@@ -9,9 +9,10 @@ const getUploadURL = async () => {
 
   const s3Params = {
     Bucket: process.env.BucketName,
-    Key: `${objectId}.jpg`,
+    Key: `${objectId}.jpg`, //filename
     ContentType: "image/jpeg", // Update to match whichever content type you need to upload
     //ACL: 'public-read'      // Enable this setting to make the object publicly readable - only works if the bucket can support public objects
+    Expires: 100 //time to expire in seconds
   };
 
   console.log("getUploadURL: ", s3Params);

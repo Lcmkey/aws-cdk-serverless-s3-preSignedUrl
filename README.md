@@ -31,22 +31,31 @@ SERVERLESS-PRESIGNED-URL-Dev-S3BucketStack
 SERVERLESS-PRESIGNED-URL-Dev-LambdaStack
 SERVERLESS-PRESIGNED-URL-Dev-ApiGatewaytack
 ```
-2. Deploy S3 Stack
+2. Build file
+```sh
+$ npm run build
+```
+
+3. Deploy S3 Stack
 
 ```sh
 $ cdk deploy SERVERLESS-PRESIGNED-URL-Dev-S3BucketStack
 ```
-3. Deploy IAM Stck
+４. Deploy IAM Stck
 ```sh
 $ cdk deploy SERVERLESS-PRESIGNED-URL-Dev-IamStack
 ```
 
-4. Deploy Lambda Stack
+5. Deploy Lambda Stack
 ```sh
 $ cdk deploy SERVERLESS-PRESIGNED-URL-Dev-LambdaStack
 ```
 
-5. Deploy Api-Gateway Stack
+6. Deploy Api-Gateway Stack
 ```sh
 $ cdk deploy SERVERLESS-PRESIGNED-URL-Dev-ApiGatewaytack
 ```
+
+# Test
+
+Use `imsonnia` / `postman` choose `PUT` request method body (Binary file)
