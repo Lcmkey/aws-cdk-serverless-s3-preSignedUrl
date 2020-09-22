@@ -59,3 +59,10 @@ $ cdk deploy SERVERLESS-PRESIGNED-URL-Dev-ApiGatewaytack
 # Test
 
 Use `imsonnia` / `postman` choose `PUT` request method body (Binary file)
+
+---
+# Reference
+[Serverless S3 Uploader][s3-serverless-uploader]
+
+<!-- Reference Link -->
+[s3-serverless-uploader]: https://github.com/jbesw/sar-s3-serverless-uploader/blob/master/template.yaml
